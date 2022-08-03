@@ -37,3 +37,10 @@ let registerButton = UIAlertAction(title: "등록", style: .default, handler: {
     - 여러가지 타입을 저장할 수 있음. primitive type, ns type, ...
 
 #
+
+### 🍎 결과물
+<div>
+<img width="300" alt="스크린샷 2022-08-04 오전 4 53 19" src="https://user-images.githubusercontent.com/74126735/182697620-56222d64-5067-4fc7-86c5-099516afbce1.png">
+<img width="300" alt="스크린샷 2022-08-04 오전 4 53 51" src="https://user-images.githubusercontent.com/74126735/182697628-dd1fb69f-178f-48c0-910f-7dc645ca0359.png">
+<img width="300" alt="스크린샷 2022-08-04 오전 4 54 31" src="https://user-images.githubusercontent.com/74126735/182697638-cff7d792-2c1f-4f25-80aa-495dcd49aa19.png">
+</div>
