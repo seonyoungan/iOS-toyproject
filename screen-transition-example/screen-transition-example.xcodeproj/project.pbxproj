@@ -13,7 +13,10 @@
 		E4273DC3289C361700A71A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4273DC1289C361700A71A5D /* Main.storyboard */; };
 		E4273DC5289C361900A71A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4273DC4289C361900A71A5D /* Assets.xcassets */; };
 		E4273DC8289C361900A71A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4273DC6289C361900A71A5D /* LaunchScreen.storyboard */; };
-		E4273DD0289C37BA00A71A5D /* SuguePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4273DCF289C37BA00A71A5D /* SuguePushViewController.swift */; };
+		E4273DD228A1617C00A71A5D /* SeguePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4273DD128A1617C00A71A5D /* SeguePushViewController.swift */; };
+		E4273DD428A169FB00A71A5D /* SeguePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4273DD328A169FB00A71A5D /* SeguePresentViewController.swift */; };
+		E4273DD628A16D7100A71A5D /* CodePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4273DD528A16D7100A71A5D /* CodePushViewController.swift */; };
+		E4CB1B7928A172310031AADD /* CodePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB1B7828A172310031AADD /* CodePresentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +28,10 @@
 		E4273DC4289C361900A71A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4273DC7289C361900A71A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4273DC9289C361900A71A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4273DCF289C37BA00A71A5D /* SuguePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuguePushViewController.swift; sourceTree = "<group>"; };
+		E4273DD128A1617C00A71A5D /* SeguePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguePushViewController.swift; sourceTree = "<group>"; };
+		E4273DD328A169FB00A71A5D /* SeguePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguePresentViewController.swift; sourceTree = "<group>"; };
+		E4273DD528A16D7100A71A5D /* CodePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushViewController.swift; sourceTree = "<group>"; };
+		E4CB1B7828A172310031AADD /* CodePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePresentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +71,10 @@
 				E4273DC4289C361900A71A5D /* Assets.xcassets */,
 				E4273DC6289C361900A71A5D /* LaunchScreen.storyboard */,
 				E4273DC9289C361900A71A5D /* Info.plist */,
-				E4273DCF289C37BA00A71A5D /* SuguePushViewController.swift */,
+				E4273DD128A1617C00A71A5D /* SeguePushViewController.swift */,
+				E4273DD328A169FB00A71A5D /* SeguePresentViewController.swift */,
+				E4273DD528A16D7100A71A5D /* CodePushViewController.swift */,
+				E4CB1B7828A172310031AADD /* CodePresentViewController.swift */,
 			);
 			path = "screen-transition-example";
 			sourceTree = "<group>";
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4273DD0289C37BA00A71A5D /* SuguePushViewController.swift in Sources */,
+				E4273DD228A1617C00A71A5D /* SeguePushViewController.swift in Sources */,
+				E4273DD628A16D7100A71A5D /* CodePushViewController.swift in Sources */,
 				E4273DC0289C361700A71A5D /* ViewController.swift in Sources */,
 				E4273DBC289C361700A71A5D /* AppDelegate.swift in Sources */,
+				E4CB1B7928A172310031AADD /* CodePresentViewController.swift in Sources */,
+				E4273DD428A169FB00A71A5D /* SeguePresentViewController.swift in Sources */,
 				E4273DBE289C361700A71A5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
