@@ -79,7 +79,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ct0-68-ROw">
-                                <rect key="frame" x="24" y="216.5" width="366" height="66.5"/>
+                                <rect key="frame" x="24" y="216.5" width="366" height="81.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="색상 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TF-e3-il8">
                                         <rect key="frame" x="0.0" y="0.0" width="63.5" height="20.5"/>
@@ -88,29 +88,29 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u3H-Se-Hdr">
-                                        <rect key="frame" x="0.0" y="35.5" width="197.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="184" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8Z-Fp-L2m">
-                                                <rect key="frame" x="0.0" y="0.0" width="60.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="노란색"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="yellow_circle"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weD-cQ-i6t">
-                                                <rect key="frame" x="68.5" y="0.0" width="60.5" height="31"/>
+                                            <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weD-cQ-i6t">
+                                                <rect key="frame" x="64" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="초록색"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="green_circle"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72f-6T-jUn">
-                                                <rect key="frame" x="137" y="0.0" width="60.5" height="31"/>
+                                            <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72f-6T-jUn">
+                                                <rect key="frame" x="128" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="보라색"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="purple_circle"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TsG-xi-UeY">
-                                <rect key="frame" x="24" y="318" width="366" height="66.5"/>
+                                <rect key="frame" x="24" y="333" width="366" height="81.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배경 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPH-Ue-2Vj">
                                         <rect key="frame" x="0.0" y="0.0" width="63.5" height="20.5"/>
@@ -119,29 +119,29 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uBY-Mg-b4t">
-                                        <rect key="frame" x="0.0" y="35.5" width="197.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="184" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAK-ZN-LlV">
-                                                <rect key="frame" x="0.0" y="0.0" width="60.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="검정색"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="black_circle"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atn-Jb-Z7K">
-                                                <rect key="frame" x="68.5" y="0.0" width="60.5" height="31"/>
+                                            <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atn-Jb-Z7K">
+                                                <rect key="frame" x="64" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="파란색"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="bllue_circle"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh3-K3-Yu3">
-                                                <rect key="frame" x="137" y="0.0" width="60.5" height="31"/>
+                                            <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh3-K3-Yu3">
+                                                <rect key="frame" x="128" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="주황색"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="orange_circle"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBB-Tf-Pfe">
-                                <rect key="frame" x="183" y="408.5" width="48.5" height="31"/>
+                                <rect key="frame" x="183" y="438.5" width="48.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="저장"/>
                             </button>
@@ -186,6 +186,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="black_circle" width="32" height="32"/>
+        <image name="bllue_circle" width="32" height="32"/>
+        <image name="green_circle" width="32" height="32"/>
+        <image name="orange_circle" width="32" height="32"/>
+        <image name="purple_circle" width="32" height="32"/>
+        <image name="yellow_circle" width="32" height="32"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
