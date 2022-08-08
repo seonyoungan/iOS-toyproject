@@ -19,7 +19,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wD9-yD-hD6">
                                 <rect key="frame" x="148.5" y="418" width="117" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kLs-GH-dMB">
@@ -44,6 +44,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentsLabel" destination="wD9-yD-hD6" id="ns6-OI-Ddf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +55,7 @@
         <!--설정-->
         <scene sceneID="Ap4-rL-UXy">
             <objects>
-                <viewController id="Foz-a1-PLY" sceneMemberID="viewController">
+                <viewController id="Foz-a1-PLY" customClass="SettingViewController" customModule="LED_board" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m4X-cm-aMA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,16 +97,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="yellow_circle"/>
+                                                <connections>
+                                                    <action selector="tapTextColorButton:" destination="Foz-a1-PLY" eventType="touchUpInside" id="OZa-P1-STI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weD-cQ-i6t">
                                                 <rect key="frame" x="64" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="green_circle"/>
+                                                <connections>
+                                                    <action selector="tapTextColorButton:" destination="Foz-a1-PLY" eventType="touchUpInside" id="Mr4-RR-GcT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72f-6T-jUn">
                                                 <rect key="frame" x="128" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="purple_circle"/>
+                                                <connections>
+                                                    <action selector="tapTextColorButton:" destination="Foz-a1-PLY" eventType="touchUpInside" id="1My-NT-g5L"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -125,16 +137,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="black_circle"/>
+                                                <connections>
+                                                    <action selector="tapBackgroundColorButton:" destination="Foz-a1-PLY" eventType="touchUpInside" id="KJm-fC-FPG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atn-Jb-Z7K">
                                                 <rect key="frame" x="64" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="bllue_circle"/>
+                                                <connections>
+                                                    <action selector="tapBackgroundColorButton:" destination="Foz-a1-PLY" eventType="touchUpInside" id="GXA-kh-Vjf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh3-K3-Yu3">
                                                 <rect key="frame" x="128" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="orange_circle"/>
+                                                <connections>
+                                                    <action selector="tapBackgroundColorButton:" destination="Foz-a1-PLY" eventType="touchUpInside" id="wAN-4M-Jde"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -163,6 +184,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="UMV-Qo-jWa"/>
+                    <connections>
+                        <outlet property="blackButton" destination="gAK-ZN-LlV" id="jjO-4g-xO6"/>
+                        <outlet property="blueButton" destination="Atn-Jb-Z7K" id="SyL-6n-qoO"/>
+                        <outlet property="greenButton" destination="weD-cQ-i6t" id="Jve-Fx-fy9"/>
+                        <outlet property="orangeButton" destination="Yh3-K3-Yu3" id="V7R-MD-lzL"/>
+                        <outlet property="purpleButton" destination="72f-6T-jUn" id="pSQ-XY-50F"/>
+                        <outlet property="textField" destination="S6L-QW-aEC" id="7Wa-bb-fl7"/>
+                        <outlet property="yellowButton" destination="r8Z-Fp-L2m" id="rG8-14-zOt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oe-St-8jD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,8 +228,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
