@@ -14,12 +14,17 @@ class ViewController: UIViewController, LEDBoardSettingDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.contentsLabel.textColor = .yellow
+        
     }
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let settingViewController = segue.destination as? SettingViewController{
             settingViewController.delegate = self //위임받기
+            //설정값 초기화 안되게 하기
+            settingViewController.ledText = self.contentsLabel.text
+            settingViewController.textColor = self.contentsLabel.textColor
+            settingViewController.backgroundColor = self.view.backgroundColor ?? .black
         }
     }
     

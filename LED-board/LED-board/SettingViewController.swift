@@ -24,10 +24,21 @@ class SettingViewController: UIViewController {
     weak var delegate: LEDBoardSettingDelegate?
     var textColor: UIColor = .yellow
     var backgroundColor: UIColor = .black
+    var ledText: String? //저장값 유지하기
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.configureView()
+    }
+    
+    
+    //저장값 유지하기
+    private func configureView(){
+        if let ledText = self.ledText{
+            self.textField.text = ledText
+        }
+        self.changeTextColor(color: self.textColor)
+        self.changeBackgroundColor(color: self.backgroundColor)
     }
     
     //어떤 색상이 선택되었는지는 sender 파라미터를 통해 알 수 있다.
