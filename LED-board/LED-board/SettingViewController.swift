@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol LEDBoardSettingDelegate: AnyObject{
+    func changedSetting(text: String?, textColor: UIColor, backgroudColor: UIColor)
+}
+
 class SettingViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
@@ -16,6 +20,10 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var blackButton: UIButton!
     @IBOutlet weak var blueButton: UIButton!
     @IBOutlet weak var orangeButton: UIButton!
+    
+    weak var delegate: LEDBoardSettingDelegate?
+    var textColor: UIColor = .yellow
+    var backgroundColor: UIColor = .black
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,21 +37,38 @@ class SettingViewController: UIViewController {
         //센더와 버튼 아울렛을 비교
         if sender == self.yellowButton{
             self.changeTextColor(color: .yellow)
+            self.textColor = .yellow
         } else if sender == self.purpleButton{
             self.changeTextColor(color: .purple)
+            self.textColor = .purple
         } else if sender == self.greenButton{
             self.changeTextColor(color: .green)
+            self.textColor = .green
         }
     }
     
     @IBAction func tapBackgroundColorButton(_ sender: UIButton){
         if sender == self.blackButton{
             self.changeBackgroundColor(color: .black)
+            self.backgroundColor = .black
         } else if sender == self.blueButton{
             self.changeBackgroundColor(color: .blue)
+            self.backgroundColor = .blue
         } else if sender == self.orangeButton{
             self.changeBackgroundColor(color: .orange)
+            self.backgroundColor = .orange
         }
+    }
+    
+    //저장버튼
+    @IBAction func tapSaveButton(_ sender: UIButton){
+        self.delegate?.changedSetting(
+            text: self.textField.text,
+            textColor: self.textColor,
+            backgroudColor: self.backgroundColor
+        )
+        //이동하게되면 담긴 정보를 가지고 가도록..
+        self.navigationController?.popViewController(animated: true)
     }
     
     //텍스트색
