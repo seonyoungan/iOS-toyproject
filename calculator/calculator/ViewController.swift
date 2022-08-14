@@ -104,6 +104,7 @@ class ViewController: UIViewController {
                 self.firstOperand = self.result //첫번째 피연산자변수에 현재 결과값 넣어줌
                 self.numberOutputLable.text = self.result // 연산된 결과값 표시
             }
+            self.currentOperation = operation //누적연산
         } else{
             self.firstOperand = self.displayNumber
             self.currentOperation = operation

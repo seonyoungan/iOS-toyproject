@@ -15,3 +15,10 @@
 - [x] delegate pettern을 이용한 이전 화면으로 데이터 전달하기
 - [x] 설정값 유지되도록 하기
 #
+
+### project03: [calculator🧸](https://github.com/seonyoungan/iOS-toyproject/tree/main/calculator)
+- [x] 키패드를 이용한 입력
+- [x] 연산 기능
+- [x] 누적연산 기능
+- [x] 초기화 기능
+- [x] 결과값 출력
