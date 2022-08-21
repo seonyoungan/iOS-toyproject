@@ -17,6 +17,7 @@
 		E4CC4E3228AF74C60031BFB9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC4E3128AF74C60031BFB9 /* StartViewController.swift */; };
 		E4CC4E3428AF76510031BFB9 /* StarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC4E3328AF76510031BFB9 /* StarCell.swift */; };
 		E4CC4E3628AF79200031BFB9 /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC4E3528AF79200031BFB9 /* WriteDiaryViewController.swift */; };
+		E4CC4E3828B228A20031BFB9 /* DiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC4E3728B228A20031BFB9 /* DiaryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E4CC4E3128AF74C60031BFB9 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		E4CC4E3328AF76510031BFB9 /* StarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCell.swift; sourceTree = "<group>"; };
 		E4CC4E3528AF79200031BFB9 /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
+		E4CC4E3728B228A20031BFB9 /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				E4CC4E3128AF74C60031BFB9 /* StartViewController.swift */,
 				E4CC4E3328AF76510031BFB9 /* StarCell.swift */,
 				E4CC4E3528AF79200031BFB9 /* WriteDiaryViewController.swift */,
+				E4CC4E3728B228A20031BFB9 /* DiaryDetailViewController.swift */,
 			);
 			path = diary;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				E4CC4E3428AF76510031BFB9 /* StarCell.swift in Sources */,
 				E4CC4E1C28AF70530031BFB9 /* ViewController.swift in Sources */,
 				E4CC4E1828AF70530031BFB9 /* AppDelegate.swift in Sources */,
+				E4CC4E3828B228A20031BFB9 /* DiaryDetailViewController.swift in Sources */,
 				E4CC4E1A28AF70530031BFB9 /* SceneDelegate.swift in Sources */,
 				E4CC4E3028AF74680031BFB9 /* DiaryCell.swift in Sources */,
 			);
